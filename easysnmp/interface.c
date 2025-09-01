@@ -261,7 +261,7 @@ void __libraries_init()
                        NETSNMP_OID_OUTPUT_SUFFIX);
 }
 
-void __libraries_free()
+void __libraries_free(void *ignore)
 {
     snmp_shutdown(APPNAME);
 }
